@@ -1,0 +1,10 @@
+import axios from 'axios';
+
+const clienteAxios = axios.create({
+    baseURL: 'https://stormy-fjord-74565.herokuapp.com',
+    headers: {
+        "Content-type": "application/json"
+      }
+});
+
+export default clienteAxios;

@@ -1,0 +1,76 @@
+{
+  "publicaciones": [
+    {
+      "id": 1,
+      "imagen": "https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg",
+      "titulo": "Enseño React",
+      "descripcion": "Se enseña react por horas con proyectos practicos y tecnologias dinamicas",
+      "contacto": "uncorreo@correo.com",
+      "categoria": "Tecnologia",
+      "precio": 6200
+    },
+    {
+      "id": 2,
+      "imagen": "https://www.unir.net/wp-content/uploads/2021/04/la-universidad-que-necesitamos_c-2-1.jpg",
+      "titulo": "Enseño Angular",
+      "descripcion": "Se enseña angular por horas con proyectos practicos y tecnologias dinamicas",
+      "contacto": "uncorreo@correo.com",
+      "categoria": "Escolar/Universidad",
+      "precio": 6200
+    },
+    {
+      "id": 3,
+      "imagen": "https://geeksroom.com/wp-content/uploads/2018/05/professional-services-home.jpg",
+      "titulo": "Arreglo Lavamanos",
+      "descripcion": "Se realiza mantenimiento de lavamanos",
+      "contacto": "uncorreo@correo.com",
+      "categoria": "Hogar",
+      "precio": 3800
+    },
+    {
+      "titulo": "hola",
+      "imagen": "https://undefined.co.jp/img/og.png",
+      "descripcion": "csdsds",
+      "contacto": "sdsdsdd",
+      "categoria": "Otro",
+      "precio": 5,
+      "id": 4
+    },
+    {
+      "titulo": "De Hogar",
+      "imagen": "https://geeksroom.com/wp-content/uploads/2018/05/professional-services-home.jpg",
+      "descripcion": "Mi nombre es cristian y ofrezco servicio de pintura de paredes para el hogar.",
+      "contacto": "camilo.correo@correo.com",
+      "categoria": "Hogar",
+      "precio": 150000,
+      "id": 5
+    },
+    {
+      "titulo": "Diego",
+      "imagen": "https://www.unir.net/wp-content/uploads/2021/04/la-universidad-que-necesitamos_c-2-1.jpg ",
+      "descripcion": "Diego Firebase React",
+      "contacto": "camilo@correo.com",
+      "categoria": "Escolar/Universitario",
+      "precio": 27000,
+      "id": 6
+    },
+    {
+      "titulo": "Una publicacion de tecnologia",
+      "imagen": "https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg",
+      "descripcion": "Una descripcion de la publicacion de tecnologia",
+      "contacto": "camilo.correo@correo.com",
+      "categoria": "Tecnologia",
+      "precio": 340000,
+      "id": 7
+    },
+    {
+      "titulo": "Otra Publicacion",
+      "imagen": "https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg",
+      "descripcion": "En este caso es una publicacion dinamica de lo que quiero vender",
+      "contacto": "cristian@elmejor.com",
+      "categoria": "Tecnologia",
+      "precio": 1200000,
+      "id": 8
+    }
+  ]
+}
