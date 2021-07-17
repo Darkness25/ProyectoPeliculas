@@ -33,7 +33,7 @@ const VerPublicacion = () => {
               <h5>Duracion:</h5>
               <p class="card-text">{duracion}</p>
               <p>
-                Link para verla:<strong>{link}$</strong>
+                Link para verla:<strong>{link}</strong>
               </p>
                <h5>Categoria:</h5>
               <p class="card-text">{idTipo}</p>

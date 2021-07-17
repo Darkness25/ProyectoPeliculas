@@ -20,7 +20,7 @@ const Header = () => {
         to={"/publicaciones/nueva"}
         className="btn btn-secondary nuevo-post d-block d-md-inline-block"
       >
-        Agregar Pelicula✚
+        Agregar Pelicula
       </Link>
          
           <button
@@ -36,7 +36,7 @@ const Header = () => {
           >
             Ingresar
           </Link>
-          OR
+          ""
           <Link
             to={"/signup"}
             className="btn btn-danger nuevo-post d-block d-md-inline-block"

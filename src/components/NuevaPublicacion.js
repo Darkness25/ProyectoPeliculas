@@ -164,7 +164,8 @@ const AddTutorial = () => {
     setTutorial({ ...tutorial, [name]: value });
   };
 
-  const saveTutorial = () => {
+  const saveTutorial = (e) => {
+    e.preventDefault();
     const { id, nombre, duracion, link, idTipo } = tutorial;
 
     dispatch(createTutorial(id, nombre, duracion, link, idTipo))
@@ -196,86 +197,87 @@ const AddTutorial = () => {
     <div className="row justify-content-center text-center">
       <div className="col-md-8">
         <div className="card"></div>
-    <div className="submit-form">
-      {submitted ? (
-        <div>
-          <h4>You submitted successfully!</h4>
-          <button className="btn btn-success" onClick={newTutorial}>
-            Agregar Otra Pelicula
-          </button>
+        <div className="submit-form">
+          {submitted ? (
+            <div>
+              <h4>You submitted successfully!</h4>
+              <button className="btn btn-success" onClick={newTutorial}>
+                Agregar Otra Pelicula
+              </button>
+            </div>
+          ) : (
+            <div>
+              <form onSubmit={saveTutorial}>
+                <div className="form-group">
+
+                  <label htmlFor="title">Nombre Pelicula</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nombre"
+                    minLength={5}
+                    maxLength={50}
+                    required="required"
+                    value={tutorial.nombre}
+                    onChange={handleInputChange}
+                    name="nombre"
+                  />
+
+                </div>
+                <div className="form-group">
+                  <label htmlFor="description">Duracion</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="duracion"
+                    minLength={2}
+                    maxLength={3}
+                    required={true}
+                    value={tutorial.duracion}
+                    onChange={handleInputChange}
+                    name="duracion"
+                  />
+                </div>
+
+
+                <div className="form-group">
+                  <label htmlFor="description">Link de acceso a la pelicula</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="link"
+                    required={true}
+                    value={tutorial.link}
+                    onChange={handleInputChange}
+                    name="link"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="description">Categoria</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="idTipo"
+                    minLength={1}
+                    maxLength={15}
+                    required={true}
+                    value={tutorial.idTipo}
+                    onChange={handleInputChange}
+                    name="idTipo"
+                  />
+                </div>
+                <button  className="btn btn-success" type="submit">
+                  Submit
+                </button>
+              </form>
+
+
+
+            </div>
+          )}
         </div>
-      ) : (
-        <div>
-          <div className="form-group">
-            <label htmlFor="title">Nombre Pelicula</label>
-            <input
-              type="text"
-              className="form-control"
-              id="nombre"
-              minLength={1}
-              maxLength={10}
-              required={true}
-              value={tutorial.nombre}
-              onChange={handleInputChange}
-              name="nombre"
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="description">Duracion</label>
-            <input
-              type="text"
-              className="form-control"
-              id="duracion"
-              minLength={2}
-                           maxLength={3}
-                           required={true}
-              value={tutorial.duracion}
-              onChange={handleInputChange}
-              name="duracion"
-            />
-          </div>
-
-
-         
-
-          <div className="form-group">
-            <label htmlFor="description">Link de acceso a la pelicula</label>
-            <input
-              type="text"
-              className="form-control"
-              id="link"              
-              required={true}
-              value={tutorial.link}
-              onChange={handleInputChange}
-              name="link"
-            />
-          </div>
-
-          <div className="form-group">
-          <label htmlFor="description">Categoria</label>
-          <input
-            type="text"
-            className="form-control"
-            id="idTipo"
-            minLength={1}
-                           maxLength={2}
-                           required={true}
-            value={tutorial.idTipo}
-            onChange={handleInputChange}
-            name="idTipo"
-          />
-        </div>
-
-          
-
-          <button onClick={saveTutorial} className="btn btn-success" type="submit">
-            Submit
-          </button>
-        </div>
-      )}
-    </div>
-    </div>
+      </div>
     </div>
   );
 };

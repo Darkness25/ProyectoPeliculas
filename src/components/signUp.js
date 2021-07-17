@@ -43,7 +43,7 @@ export default class SignUp extends Component {
       <div className="container text-center">
         <form className="mt-5 py-5 px-5" onSubmit={this.handleSubmit}>
           <h1>
-            Registrate
+            
             <Link className="title ml-2" to="/">Peliculas</Link>
           </h1>
           <p className="lead">Complete el formulario para crear una cuenta.</p>

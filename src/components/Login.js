@@ -46,7 +46,7 @@ export default class Login extends Component {
           onSubmit={this.handleSubmit}
         >
           <h1>
-            Ingresa a
+            
             <Link className="title ml-2" to="/">
               Peliculas
             </Link>
@@ -57,7 +57,7 @@ export default class Login extends Component {
           <div className="form-group ">
             <input
               className="form-control text-center"
-              placeholder="Email"
+              placeholder="Correo Electronico"
               name="email"
               type="email"
               onChange={this.handleChange}
@@ -67,7 +67,7 @@ export default class Login extends Component {
           <div className="form-group">
             <input
               className="form-control text-center"
-              placeholder="Password"
+              placeholder="Contraseña"
               name="password"
               onChange={this.handleChange}
               value={this.state.password}
